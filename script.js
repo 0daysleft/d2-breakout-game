@@ -75,6 +75,14 @@ function moverUser(e){
                currentPosition[0] += 10
                drawUser()
                break;
+          case 'ArrowUp' :
+               currentPosition[1] += 10
+               drawUser()
+               break;
+          case 'ArrowDown' :
+               currentPosition[1] -= 10
+               drawUser()
+               break;
      }
 }
 
