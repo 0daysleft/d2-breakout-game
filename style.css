@@ -15,5 +15,13 @@
      bottom: 50px; */
 }
 
+.user{
+     position: absolute;
+     width: 100px;
+     height: 20px;
+     z-index: 1;
+     background-color: blue;
+}
+
 
 
