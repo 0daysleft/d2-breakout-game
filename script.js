@@ -94,3 +94,9 @@ function moverUser(e){
 }
 
 document.addEventListener('keydown', moverUser)
+
+const ball = document.createElement('div');
+ball.classList.add('ball')
+grid.appendChild(ball)
+
+
