@@ -112,12 +112,10 @@ grid.appendChild(ball)
 
 
 function moveBall(){
-     //if(ballCurrentPosition >= [500, 300]) return
      ballCurrentPosition[0] += xDirection
      ballCurrentPosition[1] += yDirection
      drawBall()
      checkForCollision()
-     //console.log(xDirection, yDirection)
 }
 
 timerId = setInterval(moveBall, 30)
@@ -131,9 +129,7 @@ function checkForCollision(){
 
 function changeDirection(){
      if(xDirection === 2 && yDirection === 2){
-          //console.log("Hello")
-          yDirection -=2;
-          //xDirection -=2;
+          xDirection -=2;
           return;
      }
 
