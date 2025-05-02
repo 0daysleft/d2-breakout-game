@@ -5,10 +5,14 @@ const blockHeight = 20;
 let timerId;
 let boardWidth = 600
 let boardHeight = 300
+let ballDiameter = 20;
 const userStart = [230, 10]
 let currentPosition = userStart;
 const ballStart = [270, 30];
 const ballCurrentPosition = ballStart;
+let xDirection = 2;
+let yDirection = 2;
+
 class Block{
      constructor(xAxis, yAxis){
           this.bottomLeft = [xAxis, yAxis]
@@ -108,10 +112,30 @@ grid.appendChild(ball)
 
 
 function moveBall(){
-     if(ballCurrentPosition >= [500, 300]) return
-     ballCurrentPosition[0] +=2
-     ballCurrentPosition[1] +=2
+     //if(ballCurrentPosition >= [500, 300]) return
+     ballCurrentPosition[0] += xDirection
+     ballCurrentPosition[1] += yDirection
      drawBall()
+     checkForCollision()
 }
 
-timerId = setInterval(moveBall, 30)
+//timerId = setInterval(moveBall, 30)
+
+function checkForCollision(){
+     if(ballCurrentPosition >= (boardWidth - ballDiameter)){
+          changeDirection()
+     }
+}
+
+
+function changeDirection(){
+     if(xDirection === 2 && yDirection == 2){
+          yDirection = -2;
+          return;
+     }
+
+     //if
+}
+
+
+
