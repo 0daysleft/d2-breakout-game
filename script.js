@@ -51,7 +51,6 @@ function addBlock(){
                block.style.left = blocks[i].bottomLeft[0] + 'px'
                block.style.bottom = blocks[i].bottomLeft[1] + 'px'
                grid.appendChild(block)
-
      }
 
 }
@@ -107,3 +106,11 @@ drawBall()
 grid.appendChild(ball)
 
 
+function moveBall(){
+     if(ballCurrentPosition >= [500, 300]) return
+     ballCurrentPosition[0] +=2
+     ballCurrentPosition[1] +=2
+     drawBall()
+}
+
+setInterval(moveBall, 30)
