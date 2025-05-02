@@ -5,4 +5,6 @@ const block = document.createElement('div');
 
 block.classList.add('block');
 block.style.left = '50px'
-grid.appendChild('block')
+grid.appendChild(block)
+
+//grid.style.backgroundColor = 'red'
