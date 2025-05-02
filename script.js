@@ -73,13 +73,14 @@ function moverUser(e){
                drawUser()
                break;
           case 'ArrowRight' :
-               if(currentPosition[0] <= grid.style.width) return
+               //if(currentPosition[0] <= grid.style.width) return
                currentPosition[0] += 10
                drawUser()
                break;
           case 'ArrowUp' :
-               if(currentPosition[1] <= grid.style.height) return
+               //if(currentPosition[1] <= grid.clientHeight) return
                currentPosition[1] += 10
+               
                drawUser()
                break;
           case 'ArrowDown' :
