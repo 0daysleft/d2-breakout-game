@@ -73,3 +73,5 @@ function moverUser(e){
                break;
      }
 }
+
+document.addEventListener('keydown', moverUser)
