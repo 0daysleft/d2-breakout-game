@@ -13,17 +13,16 @@ class Block{
 }
 
 const blocks = [
-     new Block[10, 270]
-
+     new Block(10, 270)
 ]
 
 function addBlock(){
- 
-     for(let i = 0; i < block.length; i++){
+  
+     for(let i = 0; i < blocks.length; i++){
               const block = document.createElement('div');
                block.classList.add('block');
-               block.style.left = block[i].bottomLeft[0]
-               block.style.bottom = block[i].bottomLeft[1]
+               block.style.left = blocks[i].bottomLeft[0] + 'px'
+               block.style.bottom = blocks[i].bottomLeft[1] + 'px'
                grid.appendChild(block)
 
      }
