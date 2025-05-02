@@ -57,7 +57,7 @@ addBlock()
 
 const user = document.createElement('div')
 user.classList.add('user')
-
+drawUser()
 grid.appendChild(user)
 
 function drawUser(){
@@ -68,7 +68,7 @@ function drawUser(){
 function moverUser(e){
      switch(e.key) {
           case 'ArrowLwft' :
-               currentPosition[0]-= 10
+               currentPosition[0] -= 10
                drawUser()
                break;
      }
