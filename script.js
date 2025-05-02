@@ -2,6 +2,8 @@
 const grid = document.querySelector('.grid');
 const blockWidth  = 100;
 const blockHeight = 20;
+let boardWidth = 600
+let boardHeight = 300
 const userStart = [230, 10]
 let currentPosition = userStart;
 
@@ -73,12 +75,12 @@ function moverUser(e){
                drawUser()
                break;
           case 'ArrowRight' :
-               //if(currentPosition[0] <= grid.style.width) return
+               if(currentPosition[0] >= boardWidth) return
                currentPosition[0] += 10
                drawUser()
                break;
           case 'ArrowUp' :
-               //if(currentPosition[1] <= grid.clientHeight) return
+               if(currentPosition[1] <= boardHeight) return
                currentPosition[1] += 10
                
                drawUser()
