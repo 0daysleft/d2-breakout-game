@@ -23,5 +23,10 @@
      background-color: red;
 }
 
-
+.ball{
+     width: 20px;
+     height: 20px;
+     border-radius: 20px;
+     color: aqua;
+}
 
