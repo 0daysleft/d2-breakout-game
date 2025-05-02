@@ -2,6 +2,7 @@
 const grid = document.querySelector('.grid');
 const blockWidth  = 100;
 const blockHeight = 20;
+let timerId;
 let boardWidth = 600
 let boardHeight = 300
 const userStart = [230, 10]
@@ -113,4 +114,4 @@ function moveBall(){
      drawBall()
 }
 
-setInterval(moveBall, 30)
+timerId = setInterval(moveBall, 30)
