@@ -75,12 +75,12 @@ function moverUser(e){
                drawUser()
                break;
           case 'ArrowRight' :
-               if(currentPosition[0] >= (boardWidth - 100)) return
+               if(currentPosition[0] >= (boardWidth - blockWidth)) return
                currentPosition[0] += 10
                drawUser()
                break;
           case 'ArrowUp' :
-               if(currentPosition[1] >= boardHeight - 20) return
+               if(currentPosition[1] >= boardHeight - blockHeight) return
                currentPosition[1] += 10
                
                drawUser()
