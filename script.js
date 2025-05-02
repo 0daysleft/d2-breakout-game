@@ -14,15 +14,19 @@ class Block{
 
 const blocks = [
      new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270),
-     new Block(10, 270)
+     new Block(110, 270),
+     new Block(230, 270),
+     new Block(340, 270),
+     new Block(450, 270),
+     // new Block(10, 270),
+     // new Block(10, 270),
+     // new Block(10, 270),
+     // new Block(10, 270),
+     // new Block(10, 270),
+     // new Block(10, 270),
+     // new Block(10, 270),
+     // new Block(10, 270),
+     // new Block(10, 270)
 ]
 
 function addBlock(){
