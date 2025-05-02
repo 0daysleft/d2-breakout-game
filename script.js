@@ -13,6 +13,15 @@ class Block{
 }
 
 const blocks = [
+     new Block(10, 270),
+     new Block(10, 270),
+     new Block(10, 270),
+     new Block(10, 270),
+     new Block(10, 270),
+     new Block(10, 270),
+     new Block(10, 270),
+     new Block(10, 270),
+     new Block(10, 270),
      new Block(10, 270)
 ]
 
