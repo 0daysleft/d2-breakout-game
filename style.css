@@ -28,6 +28,7 @@
      width: 20px;
      height: 20px;
      border-radius: 20px;
-     color: brown;
+     background-color: rgb(51, 255, 0);
+     z-index: 1;
 }
 
