@@ -4,5 +4,5 @@ const grid = document.querySelector('.grid');
 const block = document.createElement('div');
 
 block.classList.add('block');
-grid.computedStyleMap.left = '50px'
+block.style.left = '50px'
 grid.appendChild('block')
