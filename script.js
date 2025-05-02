@@ -67,7 +67,7 @@ function drawUser(){
 
 function moverUser(e){
      switch(e.key) {
-          case 'ArrowLwft' :
+          case 'ArrowLeft' :
                currentPosition[0] -= 10
                drawUser()
                break;
