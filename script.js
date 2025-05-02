@@ -79,17 +79,17 @@ function moverUser(e){
                currentPosition[0] += 10
                drawUser()
                break;
-          case 'ArrowUp' :
-               if(currentPosition[1] >= boardHeight - blockHeight) return
-               currentPosition[1] += 10
+          // case 'ArrowUp' :
+          //      if(currentPosition[1] >= boardHeight - blockHeight) return
+          //      currentPosition[1] += 10
                
-               drawUser()
-               break;
-          case 'ArrowDown' :
-               if(currentPosition[1] <= 0) return
-               currentPosition[1] -= 10
-               drawUser()
-               break;
+          //      drawUser()
+          //      break;
+          // case 'ArrowDown' :
+          //      if(currentPosition[1] <= 0) return
+          //      currentPosition[1] -= 10
+          //      drawUser()
+          //      break;
      }
 }
 
