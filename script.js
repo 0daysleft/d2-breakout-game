@@ -120,7 +120,7 @@ function moveBall(){
      checkForCollision()
 }
 
-timerId = setInterval(moveBall, 30)
+timerId = setInterval(moveBall, 10)
 
 function checkForCollision(){
 
@@ -130,6 +130,7 @@ function checkForCollision(){
                (ballCurrentPosition[0] > blocks[i].bottomLeft[0] && ballCurrentPosition[0] < blocks[i].bottomRight[0]) && (ballCurrentPosition[1] + ballDiameter) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1]
           ){
                const allBlocks = Array.from(document.querySelectorAll('.block'))
+               
                allBlocks[i].classList.remove('block');
                blocks.splice(i, 1)
                changeDirection()
@@ -153,6 +154,8 @@ function checkForCollision(){
      ){
           changeDirection();
      }
+
+     
 
      //Check for game over
      if(ballCurrentPosition[1] <= 0){
