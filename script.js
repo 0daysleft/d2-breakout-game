@@ -1,5 +1,6 @@
 
 const grid = document.querySelector('.grid');
+const scoreDisplay = document.querySelector('#message');
 const blockWidth  = 100;
 const blockHeight = 20;
 let timerId;
@@ -128,6 +129,8 @@ function checkForCollision(){
      //Check for game over
      if(ballCurrentPosition[1] <= 0){
           clearTimeout(timerId)
+          scoreDisplay.textContent = 'Lost Game'
+          document.removeEventListener('keydown')
      }
 }
 
