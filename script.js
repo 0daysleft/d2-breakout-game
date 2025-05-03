@@ -13,6 +13,7 @@ const ballStart = [270, 30];
 const ballCurrentPosition = ballStart;
 let xDirection = 2;
 let yDirection = 2;
+let score = 0;
 
 class Block{
      constructor(xAxis, yAxis){
@@ -132,6 +133,8 @@ function checkForCollision(){
                allBlocks[i].classList.remove('block');
                blocks.splice(i, 1)
                changeDirection()
+               score++
+               scoreDisplay.textContent = score;
           }
      }
 
