@@ -124,6 +124,11 @@ function checkForCollision(){
      if(ballCurrentPosition[0] >= (boardWidth - ballDiameter) || ballCurrentPosition[1] >= (boardHeight - ballDiameter) || ballCurrentPosition[0] <= 0){
           changeDirection()
      }
+
+     //Check for game over
+     if(ballCurrentPosition[1] <= 0){
+          clearTimeout(timerId)
+     }
 }
 
 
