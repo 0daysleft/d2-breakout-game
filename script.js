@@ -91,17 +91,6 @@ function moverUser(e){
                currentPosition[0] += 10
                drawUser()
                break;
-          // case 'ArrowUp' :
-          //      if(currentPosition[1] >= boardHeight - blockHeight) return
-          //      currentPosition[1] += 10
-               
-          //      drawUser()
-          //      break;
-          // case 'ArrowDown' :
-          //      if(currentPosition[1] <= 0) return
-          //      currentPosition[1] -= 10
-          //      drawUser()
-          //      break;
      }
 }
 
@@ -125,6 +114,7 @@ timerId = setInterval(moveBall, 5)
 function checkForCollision(){
      //check for block collission
      for(let i = 0; i < blocks.length; i++){
+
           if(
                (ballCurrentPosition[0] > blocks[i].bottomLeft[0] && ballCurrentPosition[0] < blocks[i].bottomRight[0]) && (ballCurrentPosition[1] + ballDiameter) > blocks[i].bottomLeft[1] && ballCurrentPosition[1] < blocks[i].topLeft[1]
           ){
