@@ -45,3 +45,31 @@ To play the game, you can clone this repository or download the files and open `
 └── script.js # JavaScript game logic
 ```
 
+
+## Game Logic
+
+- **Ball Mechanics**: The ball's movement is controlled by velocity vectors, and it bounces off walls and blocks with a slight change in direction.
+- **Collision Detection**: The game detects collisions between the ball and blocks, as well as the ball and the paddle. When the ball hits a block, that block is removed, and the score is updated.
+- **Paddle Movement**: The paddle moves horizontally in response to player input via the arrow keys or mouse movement.
+- **Score Tracking**: Each block hit adds one point to the player's score, and the game level progresses as the player clears all blocks.
+
+## Future Improvements
+
+- Add multiple levels with increasing difficulty.
+- Add power-ups (e.g., multi-ball, larger paddle).
+- Implement a better scoring system (e.g., time-based bonus points).
+- Add a restart option when the game ends.
+
+## Thanks
+
+- Ania Kubow [GitHub Page](https://github.com/kubowania) and [YouTube Tutorials](https://www.youtube.com/c/AniaKub%C3%B3w)
+
+## License
+
+This project is open source and available.
+
+---
+
+Enjoy playing the game and have fun breaking those blocks!
+
+
