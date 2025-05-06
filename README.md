@@ -24,3 +24,16 @@ To play the game, you can clone this repository or download the files and open `
 ### Steps to run the game:
 
 1. Clone or download the repository.
+
+- [git clone](https://github.com/0daysleft/2d-breakout-game.git)
+
+2. Open the `index.html` file in any modern browser (e.g., Chrome, Firefox).
+
+## Technologies Used
+
+- **HTML**: Structure of the game.
+- **CSS**: Styling the game layout, blocks, paddle, and ball.
+- **JavaScript**: Game logic, animation, and event handling.
+
+## File Structure
+
