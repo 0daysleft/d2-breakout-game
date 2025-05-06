@@ -37,3 +37,11 @@ To play the game, you can clone this repository or download the files and open `
 
 ## File Structure
 
+```
+2d-breakout-game/
+│
+├── index.html # Main HTML file
+├── style.css # Styles for the game
+└── script.js # JavaScript game logic
+```
+
